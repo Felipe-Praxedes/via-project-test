@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.via.model.Filial;
 import com.via.model.Filial.TipoFilial;
 
-@Repository
+//@Repository
 public interface FilialRepository extends JpaRepository<Filial, Long>{
 	
 	List<Filial> findByNomeContaining(String nome);

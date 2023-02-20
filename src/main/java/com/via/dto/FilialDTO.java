@@ -12,7 +12,7 @@ public class FilialDTO {
 	private Long id;
 	private String nome;
 	private Long cnpj;
-	private String cnpjFormatado; // Formatted CNPJ
+	private String cnpjFormatado;
 	private String cidade;
 	private String uf;
 	private Filial.TipoFilial tipo;

@@ -70,5 +70,4 @@ public class Filial {
 		}
 		return cnpjEntrada.matcher(cnpjString).replaceAll("$1.$2.$3/$4-$5");
 	}
-	
 }

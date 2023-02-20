@@ -11,7 +11,6 @@ public class ViaApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ViaApiApplication.class, args);
 		FiliaisUtil.postFiliais();
-		
 	}
 
 }
