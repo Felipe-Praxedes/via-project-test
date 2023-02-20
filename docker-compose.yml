@@ -1,7 +1,23 @@
-version: "3"
+version: '2'
 services:
-   springboot-app:
-      container_name: spring-app
-      image: myorg/myapp
-      ports:
-         - 8888:80
+    message-server:
+        container_name: message-server
+        build:
+            dockerfile: Dockerfile
+        image: message-server:latest
+        ports:
+            - 18888:8888
+        networks:
+            - spring-cloud-network
+    product-server:
+        container_name: product-server
+        build:
+            dockerfile: Dockerfile
+        image: product-server:latest
+        ports:
+            - 19999:9999
+        networks:
+            - spring-cloud-network
+networks:
+    spring-cloud-network:
+        driver: bridge
